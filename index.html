@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en, ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Certificate Maker</title>
+
+    <!-- Google Fonts -->
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Black+Han+Sans|Great+Vibes|Montserrat+Subrayada|Nunito+Sans:300,400,600,900i|Sacramento|Yellowtail&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico?" type="image/x-icon" />
+
+    <!-- CSS Stylesheets -->
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+
+    <!-- Font Awesome -->
+
+    <script
+      src="https://kit.fontawesome.com/8d771c5d5a.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Bootstrap Scripts -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <img
+        src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/237/scroll_1f4dc.png"
+        id="scroll-emoji"
+        alt="certificate"
+      />
+      <h1>Certificate Generator</h1>
+    </header>
+    <form action="submit">
+      <section id="info">
+        <div class="row">
+          <div class="userInfo col-lg-4 col-md-6">
+            <label for="name"
+              ><i class="quote fas fa-quote-left"></i> Name</label
+            >
+          </div>
+          <div class="col-lg-8 col-md-6">
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              placeholder="name"
+              required
+            />
+          </div>
+          <div class="userInfo col-lg-4 col-md-6">
+            <label for="email"
+              ><i class="fas quote fa-quote-left"></i> Email</label
+            >
+          </div>
+          <div class="col-lg-8 col-md-6">
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="name@example.com"
+              required
+            />
+          </div>
+        </div>
+      </section>
+      <section id="design">
+        <div class="row">
+          <div class="certificateButton col-lg-6">
+            <input
+              type="radio"
+              class="form-check-input"
+              id="certificate1"
+              name="certificate"
+              checked
+            />
+            <label>Certifiate Type 1</label>
+          </div>
+          <div class="certificateButton col-lg-6">
+            <input
+              type="radio"
+              class="form-check-input"
+              id="certificate2"
+              name="certificate"
+            />
+            <label>Certifiate Type 2</label>
+          </div>
+        </div>
+      </section>
+      <section id="submitButton">
+        <input
+          class="btn btn-lg btn-outline-dark"
+          type="submit"
+          value="SEND CERTIFICATE"
+          id="submit"
+        />
+      </section>
+    </form>
+  </body>
+</html>

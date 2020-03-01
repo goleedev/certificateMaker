@@ -1,0 +1,47 @@
+body {
+  max-width: 20%;
+  margin: auto;
+  text-align: center;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+/* Header */
+#scroll-emoji {
+  float: left;
+  width: 25%;
+  height: auto;
+}
+
+h1 {
+  font-family: "Black Han Sans", Verdana, sans-serif;
+  font-size: 2.5rem;
+  margin: 5rem 0 8rem;
+}
+
+.quote {
+  margin-right: 10px;
+}
+
+/* User Info */
+.userInfo {
+  margin: 0.5rem 0;
+}
+
+#info {
+  margin: 1rem;
+}
+
+/* Certificate Design */
+.certificateButton {
+  margin: 3rem 0;
+}
+
+#design {
+}
+
+/* Submit Button */
+#submitButton {
+  margin: 2rem 0;
+}
