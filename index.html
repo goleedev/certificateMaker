@@ -50,7 +50,11 @@
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"
     ></script>
+
+    <!-- Script -->
+    <script src="script.js"></script>
   </head>
+
   <body>
     <header>
       <img
@@ -60,12 +64,28 @@
       />
       <h1>Certificate Generator</h1>
     </header>
-    <form action="submit">
+    <form method="post">
       <section id="info">
         <div class="row">
           <div class="userInfo col-lg-4 col-md-6">
             <label for="name"
-              ><i class="quote fas fa-quote-left"></i> Name</label
+              ><i class="icon far fa-calendar-check"></i> Month</label
+            >
+          </div>
+          <div class="col-lg-8 col-md-6">
+            <input
+              type="number"
+              class="form-control"
+              id="usermonth"
+              placeholder="month"
+              required
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="userInfo col-lg-4 col-md-6">
+            <label for="name"
+              ><i class="icon fas fa-quote-left"></i> Name</label
             >
           </div>
           <div class="col-lg-8 col-md-6">
@@ -75,11 +95,12 @@
               id="name"
               placeholder="name"
               required
+              autofocus
             />
           </div>
           <div class="userInfo col-lg-4 col-md-6">
             <label for="email"
-              ><i class="fas quote fa-quote-left"></i> Email</label
+              ><i class="icon fas fa-quote-left"></i> Email</label
             >
           </div>
           <div class="col-lg-8 col-md-6">
@@ -116,13 +137,24 @@
           </div>
         </div>
       </section>
-      <section id="submitButton">
-        <input
-          class="btn btn-lg btn-outline-dark"
-          type="submit"
-          value="SEND CERTIFICATE"
-          id="submit"
-        />
+
+      <section id="sendButton">
+        <button class="btn btn-lg btn-outline-dark">
+          SEND CERTIFICATE
+        </button>
+      </section>
+      <section id="emailContents">
+        <p id="emailTitle">🥇<span class="month"></span>월 XXIT 수료증🥇</p>
+        <p id="emailBody">
+          안녕하세요! <span id="username"></span><br />
+          <span class="month"></span>월 동안 보여주신 뜨거운 야망을 축하드리고자
+          <br />
+          XXIT에서 발행한 장려상을 수여합니다.<br /><br />
+          <span class="month"></span>월도 건강하고 야망찬 한 달이 되기를
+          바랍니다.<br /><br />
+          감사합니다. <br />
+          XXIT 드림
+        </p>
       </section>
     </form>
   </body>
