@@ -9,3 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
     return false;
   };
 });
+
+document.getElementById("sendButton").onclick = function() {
+  let name = document.getElementById("name").value;
+};
